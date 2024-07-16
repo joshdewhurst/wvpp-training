@@ -23,21 +23,40 @@ body {
     width: 200px;
 }
 
-h1, h2 {
-    color: #333;
+.main-content {
+    text-align: center;
+    padding: 20px;
 }
 
-p, ul {
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
     color: #555;
     line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-.video-container {
+.module-button {
+    display: block;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
     text-align: center;
-    margin: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.module-button:hover {
+    background-color: #0056b3;
 }
