@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Key Definitions</title>
     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.sfaf.org/wp-content/uploads/2019/02/sfaf-logo-color.png" alt="SFAF Logo">
+        </div>
+        <h1>Key Definitions</h1>
+        <p>To better understand our Workplace Violence Prevention Plan, we encourage you to explore the following key definitions. Click each term to learn more.</p>
+        
+        <button class="definition-button" onclick="toggleDefinition('emergency')">1. Emergency</button>
+        <div class="definition-content" id="emergency">
+            <p>Unanticipated circumstances that can be life-threatening or pose a risk of significant injuries to employees or other persons.</p>
+        </div>
+        
+        <button class="definition-button" onclick="toggleDefinition('engineering-controls')">2. Engineering Controls</button>
+        <div class="definition-content" id="engineering-controls">
+            <p>Aspects of the built space or devices that remove hazards from the workplace or create a barrier between the employee and the hazard.</p>
+        </div>
+        
+        <button class="definition-button" onclick="toggleDefinition('log')">3. Log</button>
+        <div class="definition-content" id="log">
+            <p>The violent incident log required by LC section 6401.9.</p>
+        </div>
+        
+        <button class="definition-button" onclick="toggleDefinition('hazard')">4. Hazard</button>
+        <div class="definition-content" id="hazard">
+            <p>A potential source of harm or adverse health effect on a person or persons. Hazards may include physical conditions, work practices, environmental factors, or substances that have the potential to cause injury, illness, or harm.</p>
+        </div>
+        
+        <button class="definition-button" onclick="toggleDefinition('serious-injury')">5. Serious Injury or Illness</button>
+        <div class="definition-content" id="serious-injury">
+            <p>Any injury or illness occurring in a place of employment or in connection with any employment that requires inpatient hospitalization for other than medical observation or diagnostic testing, or in which an employee suffers an amputation, the loss of an eye, or any serious degree of permanent disfigurement, but does not include any injury or illness or death caused by an accident on a public street or highway, unless the accident occurred in a construction zone.</p>
+        </div>
+        
+        <button class="definition-button" onclick="toggleDefinition('threat-of-violence')">6. Threat of Violence</button>
+        <div class="definition-content" id="threat-of-violence">
+            <p>Any verbal or written statement, including, but not limited to, texts, electronic messages, social media messages, or other online posts, or any behavioral or physical conduct, that conveys an intent, or that is reasonably perceived to convey an intent, to cause physical harm or to place someone in fear of physical harm, and that serves no legitimate purpose.</p>
+        </div>
+        
+        <button class="definition-button" onclick="toggleDefinition('workplace-violence')">7. Workplace Violence</button>
+        <div class="definition-content" id="workplace-violence">
+            <p>Any act of violence or threat of violence that occurs in a place of employment. This includes:</p>
+            <ul>
+                <li>The threat or use of physical force against an employee that results in, or has a high likelihood of resulting in, injury, psychological trauma, or stress, regardless of whether the employee sustains an injury.</li>
+                <li>An incident involving a threat or use of a firearm or other dangerous weapon, including the use of common objects as weapons, regardless of whether the employee sustains an injury.</li>
+            </ul>
+        </div>
+        
+        <button class="definition-button" onclick="toggleDefinition('work-practice-controls')">8. Work Practice Controls</button>
+        <div class="definition-content" id="work-practice-controls">
+            <p>Procedures and rules which are used to effectively reduce workplace violence hazards.</p>
+        </div>
+    </div>
     <script>
         function toggleDefinition(id) {
             var content = document.getElementById(id);
@@ -15,50 +68,5 @@
             }
         }
     </script>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <img alt="SFAF Logo" src="https://www.sfaf.org/wp-content/uploads/2019/02/sfaf-logo-color.png" />
-        </div>
-        <h1>Key Definitions</h1>
-        <p>To better understand our Workplace Violence Prevention Plan, we encourage you to explore the following key definitions. Click each term to learn more.</p>
-        <button class="definition-button" onclick="toggleDefinition('emergency')">1. Emergency</button>
-        <div class="definition-content" id="emergency">
-            <p>Unanticipated circumstances that can be life-threatening or pose a risk of significant injuries to employees or other persons.</p>
-        </div>
-        <button class="definition-button" onclick="toggleDefinition('engineering-controls')">2. Engineering Controls</button>
-        <div class="definition-content" id="engineering-controls">
-            <p>Aspects of the built space or devices that remove hazards from the workplace or create a barrier between the employee and the hazard.</p>
-        </div>
-        <button class="definition-button" onclick="toggleDefinition('log')">3. Log</button>
-        <div class="definition-content" id="log">
-            <p>The violent incident log required by LC section 6401.9.</p>
-        </div>
-        <button class="definition-button" onclick="toggleDefinition('hazard')">4. Hazard</button>
-        <div class="definition-content" id="hazard">
-            <p>A potential source of harm or adverse health effect on a person or persons. Hazards may include physical conditions, work practices, environmental factors, or substances that have the potential to cause injury, illness, or harm.</p>
-        </div>
-        <button class="definition-button" onclick="toggleDefinition('serious-injury')">5. Serious Injury or Illness</button>
-        <div class="definition-content" id="serious-injury">
-            <p>Any injury or illness occurring in a place of employment or in connection with any employment that requires inpatient hospitalization for other than medical observation or diagnostic testing, or in which an employee suffers an amputation, the loss of an eye, or any serious degree of permanent disfigurement, but does not include any injury or illness or death caused by an accident on a public street or highway, unless the accident occurred in a construction zone.</p>
-        </div>
-        <button class="definition-button" onclick="toggleDefinition('threat-of-violence')">6. Threat of Violence</button>
-        <div class="definition-content" id="threat-of-violence">
-            <p>Any verbal or written statement, including, but not limited to, texts, electronic messages, social media messages, or other online posts, or any behavioral or physical conduct, that conveys an intent, or that is reasonably perceived to convey an intent, to cause physical harm or to place someone in fear of physical harm, and that serves no legitimate purpose.</p>
-        </div>
-        <button class="definition-button" onclick="toggleDefinition('workplace-violence')">7. Workplace Violence</button>
-        <div class="definition-content" id="workplace-violence">
-            <p>Any act of violence or threat of violence that occurs in a place of employment. This includes:</p>
-            <ul>
-                <li>The threat or use of physical force against an employee that results in, or has a high likelihood of resulting in, injury, psychological trauma, or stress, regardless of whether the employee sustains an injury.</li>
-                <li>An incident involving a threat or use of a firearm or other dangerous weapon, including the use of common objects as weapons, regardless of whether the employee sustains an injury.</li>
-            </ul>
-        </div>
-        <button class="definition-button" onclick="toggleDefinition('work-practice-controls')">8. Work Practice Controls</button>
-        <div class="definition-content" id="work-practice-controls">
-            <p>Procedures and rules which are used to effectively reduce workplace violence hazards.</p>
-        </div>
-    </div>
 </body>
 </html>
