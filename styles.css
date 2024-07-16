@@ -30,7 +30,6 @@ h1, h2 {
 p, ul {
     color: #555;
     line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 ul {
@@ -38,51 +37,40 @@ ul {
     margin-left: 20px;
 }
 
-.module {
-    margin: 20px 0;
+.step {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.module h2 {
-    margin-bottom: 10px;
+.step:hover {
+    background-color: #d0d0d0;
 }
 
-.module a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+.step-title {
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
-.module a:hover {
-    background-color: #0056b3;
-}
-
-.definition-button {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    margin: 20px 0;
-    background-color: #007BFF;
-    color: #fff;
-    text-align: left;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.definition-button:hover {
-    background-color: #0056b3;
-}
-
-.definition-content {
+.step-content {
     display: none;
-    margin-top: 10
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.step-title span {
+    margin-left: 10px;
+}
+
+.arrow {
+    font-size: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.arrow.open {
+    transform: rotate(90deg);
+}
