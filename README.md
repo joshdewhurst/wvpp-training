@@ -4,12 +4,6 @@ This repository contains the source code for a Workplace Violence Prevention Tra
 
 The training program includes several modules that cover key topics related to workplace violence prevention, such as definitions, types of violence, responsibilities, incident reporting, and emergency response procedures. For the purposes of this repository, I have included the core content to demonstrate my ability to code and structure a comprehensive training program.
 
-## Features
-- **Grid Layout**: A professional and sleek landing page with a grid layout for easy navigation.
-- **Interactive Modules**: Engaging and informative modules covering essential topics.
-- **HTML & CSS**: Simple yet effective use of HTML and CSS to create the training content.
-- **Scalable Design**: Easily scalable and adaptable for other training programs.
-
 ## File Structure
 - `index.html`: The landing page of the training program with links to each module.
 - `styles.css`: The CSS file containing the styles for the training program.
@@ -25,10 +19,6 @@ The training program includes several modules that cover key topics related to w
 - `conclusion.html`: Conclusion of the training.
 - `summary.html`: Summary of key points from the training.
 
-## How to Use
-1. Clone the repository to your local machine.
-2. Open `index.html` in a web browser to view the training program.
-3. Navigate through the modules using the grid layout on the landing page.
 
 ## Disclaimer
 This training program is a simplified version of the full training used at SFAF. It includes the core content to demonstrate my coding capabilities but does not include quizzes and some other interactive elements present in the full training.
@@ -38,5 +28,5 @@ Feel free to reach out if you have any questions or need further information!
 ---
 
 **Josh Dewhurst**
-People Operations Specialist
+People Operations Business Partner
 San Francisco AIDS Foundation
