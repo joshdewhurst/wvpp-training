@@ -5,25 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Response Procedures</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header img {
+            width: 200px;
+        }
+        h1 {
+            color: #333;
+        }
+        p, ul {
+            color: #555;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .step {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .step:hover {
+            background-color: #d0d0d0;
+            transform: scale(1.02);
+        }
+        .step-title {
+            font-weight: bold;
+        }
+        .step-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .show {
+            display: block;
+        }
+        .icon {
+            float: right;
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        .icon.rotate {
+            transform: rotate(90deg);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img alt="SFAF Logo" src="https://www.sfaf.org/wp-content/uploads/2019/02/sfaf-logo-color.png" />
+            <img src="https://www.sfaf.org/wp-content/uploads/2019/02/sfaf-logo-color.png" alt="SFAF Logo">
         </div>
+
         <h1>Emergency Response Procedures</h1>
-        <p>SFAF has in place the following specific measures to handle actual or potential workplace violence emergencies:</p>
+
+        <p>SFAF has implemented the following measures to handle workplace violence emergencies:</p>
+
         <ul>
-            <li>SFAF uses AlertMedia to contact employees in the event of workplace violence emergencies to check the health and safety of employees and to communicate orders, response plans, or updates.</li>
-            <li>SFAF maintains and trains employees in evacuation and shelter in place plans at all our sites. Appropriate emergency evacuation signage is posted at all sites.</li>
-            <li>Group and Counseling rooms at 940 Howard and 470 Castro are equipped with emergency buttons that notify all staff of an emergency and its location. Reception desks at 940 Howard, 470 Castro and 117 6th Street are each equipped with silent alarm buttons that call the police.</li>
-        </ul>
-        <p>In the event of an emergency, including a Workplace Violence Emergency, contact the following:</p>
-        <ul>
-            <li>911 if there is immediate violence or an imminent threat of violence</li>
-            <li>Incident Assessment Team, 415-417-0264</li>
-            <li>Nathaniel Anderson, Facilities Director, <a href="mailto:nanderson@sfaf.org">nanderson@sfaf.org</a></li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">AlertMedia <span class="icon">▶</span></div>
+                <div class="step-content">SFAF uses AlertMedia to contact employees in the event of workplace violence emergencies to check the health and safety of employees and to communicate orders, response plans, or updates.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Evacuation and Shelter-in-Place Plans <span class="icon">▶</span></div>
+                <div class="step-content">SFAF maintains and trains employees in evacuation and shelter-in-place plans at all our sites. Appropriate emergency evacuation signage is posted at all sites.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Emergency Buttons <span class="icon">▶</span></div>
+                <div class="step-content">Group and Counseling rooms at 940 Howard and 470 Castro are equipped with emergency buttons that notify all staff of an emergency and its location. Reception desks at 940 Howard, 470 Castro, and 117 6th Street are each equipped with silent alarm buttons that call the police.</div>
+            </li>
         </ul>
     </div>
+
+    <script>
+        function toggleContent(element) {
+            const content = element.querySelector('.step-content');
+            const icon = element.querySelector('.icon');
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                icon.classList.remove('rotate');
+            } else {
+                content.classList.add('show');
+                icon.classList.add('rotate');
+            }
+        }
+    </script>
 </body>
 </html>
