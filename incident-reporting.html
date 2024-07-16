@@ -3,21 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workplace Violence Incident Reporting Procedure</title>
+    <title>Incident Reporting</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img alt="SFAF Logo" src="https://www.sfaf.org/wp-content/uploads/2019/02/sfaf-logo-color.png" />
+            <img src="https://www.sfaf.org/wp-content/uploads/2019/02/sfaf-logo-color.png" alt="SFAF Logo">
         </div>
+
         <h1>Workplace Violence Incident Reporting Procedure</h1>
-        <p>SFAF will implement the following effective procedures to ensure that:</p>
-        <ul>
-            <li>All threats or acts of workplace violence are reported to an employee’s supervisor or manager, who will inform the WVPP administrator/Safety Officer. This will be accomplished by utilizing the Healthicity platform for anonymous reporting.</li>
-            <li>If anonymous reporting is not feasible or preferred, employees can report incidents directly to their management or supervisor, or they can contact People & Culture through <a href="mailto:peopleandculture@sfaf.org">peopleandculture@sfaf.org</a>. People & Culture will ensure that the WVPP administrator/Safety Officer are looped in to handle the incident accordingly.</li>
-            <li>A strict non-retaliation policy is in place, and any instances of retaliation are dealt with swiftly and decisively.</li>
-        </ul>
+
+        <p>To ensure effective handling of workplace violence incidents, the following procedures are implemented:</p>
+
+        <div class="step">
+            <div class="step-title" onclick="toggleStep(this)">
+                <span class="arrow">▶</span> 
+                <span>1. Reporting threats or acts of workplace violence</span>
+            </div>
+            <div class="step-content">
+                Employees should report any threats or acts of workplace violence to their supervisor or manager. Supervisors will then inform the WVPP administrator/Safety Officer. Reports can be made anonymously through the Healthicity platform.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-title" onclick="toggleStep(this)">
+                <span class="arrow">▶</span> 
+                <span>2. Alternative reporting methods</span>
+            </div>
+            <div class="step-content">
+                If anonymous reporting is not feasible or preferred, employees can report incidents directly to their management or supervisor, or contact People &amp; Culture at <a href="mailto:peopleandculture@sfaf.org">peopleandculture@sfaf.org</a>.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-title" onclick="toggleStep(this)">
+                <span class="arrow">▶</span> 
+                <span>3. Non-retaliation policy</span>
+            </div>
+            <div class="step-content">
+                SFAF has a strict non-retaliation policy. Any instances of retaliation are dealt with swiftly and decisively to ensure a safe reporting environment.
+            </div>
+        </div>
     </div>
+
+    <script>
+        function toggleStep(element) {
+            const content = element.nextElementSibling;
+            const arrow = element.querySelector('.arrow');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                arrow.classList.remove('open');
+            } else {
+                content.style.display = "block";
+                arrow.classList.add('open');
+            }
+        }
+    </script>
 </body>
 </html>
