@@ -65,6 +65,26 @@
         .definition-content p {
             margin: 0;
         }
+        .navigation-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            color: #fff;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #004494;
+        }
     </style>
 </head>
 <body>
@@ -110,13 +130,18 @@
             <p>Any act of violence or threat of violence that occurs in a place of employment. This includes:</p>
             <ul>
                 <li>The threat or use of physical force against an employee that results in, or has a high likelihood of resulting in, injury, psychological trauma, or stress, regardless of whether the employee sustains an injury.</li>
-                <li>An incident involving a threat or use of a firearm or other dangerous weapon, including the use of common objects as weapons, regardless of whether the employee sustains an injury.</li>
+                <li>An incident involving a threat or use of a firearm or other dangerous weapon, including the use of common objects as weapons, regardless of whether the employee sustains an injury.</p>
             </ul>
         </div>
 
         <button class="definition-button" onclick="toggleDefinition('work-practice-controls')">8. Work Practice Controls</button>
         <div class="definition-content" id="work-practice-controls">
             <p>Procedures and rules which are used to effectively reduce workplace violence hazards.</p>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="types-of-violence.html" class="nav-button">Next Module</a>
+            <a href="index.html" class="nav-button">Back to Home</a>
         </div>
     </div>
 
@@ -132,3 +157,4 @@
     </script>
 </body>
 </html>
+
