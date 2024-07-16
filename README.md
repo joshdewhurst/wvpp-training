@@ -19,6 +19,11 @@ The training program includes several modules that cover key topics related to w
 - `conclusion.html`: Conclusion of the training.
 - `summary.html`: Summary of key points from the training.
 
+## Viewing the Training
+
+You can view the deployed training on GitHub Pages using the following link:
+
+[Workplace Violence Prevention Plan Training](https://joshdewhurst.github.io/wvpp-training/index.html)
 
 ## Disclaimer
 This training program is a simplified version of the full training used at SFAF. It includes the core content to demonstrate my coding capabilities but does not include quizzes and some other interactive elements present in the full training.
@@ -30,3 +35,4 @@ Feel free to reach out if you have any questions or need further information!
 **Josh Dewhurst**
 People Operations Business Partner
 San Francisco AIDS Foundation
+
