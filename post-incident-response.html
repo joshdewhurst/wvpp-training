@@ -52,6 +52,9 @@
         }
         .step-title {
             font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .step-content {
             display: none;
@@ -61,12 +64,32 @@
             display: block;
         }
         .icon {
-            float: right;
             font-size: 20px;
             transition: transform 0.3s;
         }
         .icon.rotate {
             transform: rotate(90deg);
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .nav-button:hover {
+            background-color: #004494;
         }
     </style>
 </head>
@@ -130,6 +153,11 @@
                 <div class="step-content">Personal identifying information will not be recorded or documented in the written investigation report to maintain the confidentiality and privacy of individuals involved.</div>
             </li>
         </ul>
+        <div class="navigation-buttons">
+            <a href="emergency-response.html" class="nav-button">Previous Module</a>
+            <a href="conclusion.html" class="nav-button">Next Module</a>
+            <a href="index.html" class="nav-button">Back to Home</a>
+        </div>
     </div>
 
     <script>
