@@ -3,31 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post-Incident Response and Investigation</title>
+    <title>Post Incident Response and Investigation</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header img {
+            width: 200px;
+        }
+        h1 {
+            color: #333;
+        }
+        p, ul {
+            color: #555;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .step {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .step:hover {
+            background-color: #d0d0d0;
+            transform: scale(1.02);
+        }
+        .step-title {
+            font-weight: bold;
+        }
+        .step-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .show {
+            display: block;
+        }
+        .icon {
+            float: right;
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        .icon.rotate {
+            transform: rotate(90deg);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img alt="SFAF Logo" src="https://www.sfaf.org/wp-content/uploads/2019/02/sfaf-logo-color.png" />
+            <img src="https://www.sfaf.org/wp-content/uploads/2019/02/sfaf-logo-color.png" alt="SFAF Logo">
         </div>
-        <h1>Procedures for Post-Incident Response and Investigation</h1>
+
+        <h1>Post Incident Response and Investigation</h1>
+
         <p>Following any workplace incident, SFAF may enact some or all of the following post-incident procedures:</p>
+
         <ul>
-            <li>Conducting On-site Assessment: The designated WVPP administrator or their assigned representative will promptly visit the scene of the incident, ensuring safety and practicality.</li>
-            <li>Interviewing Involved Parties: Relevant parties, including employees, witnesses, law enforcement, and/or security personnel, will be interviewed to gather comprehensive information about the incident.</li>
-            <li>Reviewing Security Footage: If available, security footage from existing cameras will be reviewed to aid in understanding the sequence of events and identifying potential security risk factors.</li>
-            <li>Assessing Workplace for Risk Factors: A thorough examination of the workplace will be conducted to identify any security risk factors associated with the incident, including previous reports concerning behavior by the perpetrator.</li>
-            <li>Determining Incident Cause: Efforts will be made to determine the root cause of the incident, considering all relevant factors and circumstances.</li>
-            <li>Implementing Corrective Actions: Based on the findings of the investigation, appropriate corrective actions will be taken to prevent similar incidents in the future.</li>
-            <li>Recording Findings and Actions: Detailed records of the investigation findings and the implemented corrective actions will be documented for future reference and accountability.</li>
-            <li>Obtaining Law Enforcement Reports: Any reports completed by law enforcement regarding the incident will be obtained and reviewed as part of the investigation process.</li>
-            <li>Utilizing Violent Incident Log: The violent incident log will be utilized for every workplace violence incident, capturing essential details such as the date, time, location, involved parties, incident description, and corrective measures taken.</li>
-            <li>Reviewing Previous Incidents: A comprehensive review of all previous incidents will be conducted to identify any patterns or recurring issues that require attention.</li>
-            <li>Providing Support and Resources: SFAF will offer support and resources to affected employees, which may include counseling services, referrals to employee assistance programs, and necessary time off work.</li>
-            <li>Ensuring Confidentiality: Personal identifying information will not be recorded or documented in the written investigation report to maintain the confidentiality and privacy of individuals involved.</li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Conducting On-site Assessment <span class="icon">▶</span></div>
+                <div class="step-content">The designated WVPP administrator or their assigned representative will promptly visit the scene of the incident, ensuring safety and practicality.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Interviewing Involved Parties <span class="icon">▶</span></div>
+                <div class="step-content">Relevant parties, including employees, witnesses, law enforcement, and/or security personnel, will be interviewed to gather comprehensive information about the incident.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Reviewing Security Footage <span class="icon">▶</span></div>
+                <div class="step-content">If available, security footage from existing cameras will be reviewed to aid in understanding the sequence of events and identifying potential security risk factors.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Assessing Workplace for Risk Factors <span class="icon">▶</span></div>
+                <div class="step-content">A thorough examination of the workplace will be conducted to identify any security risk factors associated with the incident, including previous reports concerning behavior by the perpetrator.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Determining Incident Cause <span class="icon">▶</span></div>
+                <div class="step-content">Efforts will be made to determine the root cause of the incident, considering all relevant factors and circumstances.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Implementing Corrective Actions <span class="icon">▶</span></div>
+                <div class="step-content">Based on the findings of the investigation, appropriate corrective actions will be taken to prevent similar incidents in the future.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Recording Findings and Actions <span class="icon">▶</span></div>
+                <div class="step-content">Detailed records of the investigation findings and the implemented corrective actions will be documented for future reference and accountability.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Obtaining Law Enforcement Reports <span class="icon">▶</span></div>
+                <div class="step-content">Any reports completed by law enforcement regarding the incident will be obtained and reviewed as part of the investigation process.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Utilizing Violent Incident Log <span class="icon">▶</span></div>
+                <div class="step-content">The violent incident log will be utilized for every workplace violence incident, capturing essential details such as the date, time, location, involved parties, incident description, and corrective measures taken.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Reviewing Previous Incidents <span class="icon">▶</span></div>
+                <div class="step-content">A comprehensive review of all previous incidents will be conducted to identify any patterns or recurring issues that require attention.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Providing Support and Resources <span class="icon">▶</span></div>
+                <div class="step-content">SFAF will offer support and resources to affected employees, which may include counseling services, referrals to employee assistance programs, and necessary time off work.</div>
+            </li>
+            <li class="step" onclick="toggleContent(this)">
+                <div class="step-title">Ensuring Confidentiality <span class="icon">▶</span></div>
+                <div class="step-content">Personal identifying information will not be recorded or documented in the written investigation report to maintain the confidentiality and privacy of individuals involved.</div>
+            </li>
         </ul>
-        <p>Not every incident may require all steps to be followed; actions taken will be proportional to the severity and specifics of the incident.</p>
     </div>
+
+    <script>
+        function toggleContent(element) {
+            const content = element.querySelector('.step-content');
+            const icon = element.querySelector('.icon');
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                icon.classList.remove('rotate');
+            } else {
+                content.classList.add('show');
+                icon.classList.add('rotate');
+            }
+        }
+    </script>
 </body>
 </html>
