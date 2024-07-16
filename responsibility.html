@@ -1,3 +1,6 @@
+Here is the updated HTML file for the "Responsibility" module with improved button styling:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsibility</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .nav-button:hover {
+            background-color: #004494;
+        }
+
+        .definition-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #0056b3;
+            color: #fff;
+            text-align: left;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .definition-button:hover {
+            background-color: #004494;
+        }
+
+        .definition-content {
+            display: none;
+            margin-top: 10px;
+            margin-left: 20px;
+            padding: 10px;
+            border-left: 4px solid #0056b3;
+            background-color: #e6f0ff;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -43,4 +98,6 @@
     </script>
 </body>
 </html>
+```
 
+This should make the buttons look more consistent and professional.
