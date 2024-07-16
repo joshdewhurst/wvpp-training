@@ -41,8 +41,9 @@ body {
 
 .module-card {
     background-color: white;
-    color: #333;
+    color: #0056b3;
     padding: 20px;
+    border: 2px solid #0056b3;
     border-radius: 5px;
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -55,16 +56,15 @@ body {
 .module-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f4;
 }
 
 .module-card h2 {
     margin-top: 0;
-    color: #0056b3;
     font-size: 1.5em;
 }
 
 .module-card p {
     margin-bottom: 0;
-    color: #555;
     font-size: 1em;
 }
