@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Incident Reporting</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .nav-button:hover {
+            background-color: #004494;
+        }
+
+        .step {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .step:hover {
+            background-color: #d0d0d0;
+            transform: scale(1.02);
+        }
+
+        .step-title {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .step-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .icon {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+
+        .icon.rotate {
+            transform: rotate(90deg);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -46,7 +108,7 @@
             </div>
         </div>
         <div class="navigation-buttons">
-            <a href="responsibility.html" class="nav-button">Next Module</a>
+            <a href="emergency-response.html" class="nav-button">Next Module</a>
             <a href="index.html" class="nav-button">Back to Home</a>
         </div>
     </div>
